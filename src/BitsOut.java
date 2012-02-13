@@ -28,10 +28,10 @@ public class BitsOut {
 	}
 
 	private static void displayScreen(int board) {
-		System.out.println("\n\n");
+		int mask = 0; //instantiate outside of loop for more optimization
 		for (int x = 0; x < 25; ++x){
-			int mask = (int) java.lang.Math.pow ( 2, x); //mask is 2^x
-			if ((x > 0) & (x % 5 == 0)) //returns a new line for the new row on board
+			mask = (int) java.lang.Math.pow ( 2, x); //mask is 2^x
+			if (x % 5 == 0) //returns a new line for the new row on board
 				System.out.println();
 			System.out.print(" " + (int)(((board & mask) == mask)? 1 : 0) + " "); //Outputs a 1 if the current bit is on, 0 if not.
 		}
