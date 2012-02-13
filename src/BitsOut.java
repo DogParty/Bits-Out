@@ -29,7 +29,7 @@ public class BitsOut {
 
 	private static void displayScreen(int board) {
 		System.out.println("\n\n");
-		for (int x = 0; x < 25; x++){
+		for (int x = 0; x < 25; ++x){
 			int mask = (int) java.lang.Math.pow ( 2, x); //mask is 2^x
 			if ((x > 0) & (x % 5 == 0)) //returns a new line for the new row on board
 				System.out.println();
