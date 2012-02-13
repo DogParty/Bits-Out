@@ -1,0 +1,8 @@
+Bits Out
+
+This is a small (less than 40 lines) Java program that implements Light's Out in the console.  The fun part about this, though, is the actual implementation.  The board is actually just the first 25 bits in an integer!  See, this is interesting because that means the "logic" behind the button presses is just xor'ing an integer onto the board!  All in all, this creates an extremely cross platform engine for a Light's Out game.
+
+This code is under the GPL so if you use it, please give a little credit.  Thanks for looking!
+
+Brandon Smith
+Ohio State University student
