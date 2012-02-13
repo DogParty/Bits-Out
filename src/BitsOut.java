@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 public class BitsOut {
 
+	public static int masks[] = {35, 71, 142, 284, 536, 1121, 2274, 4548, 9096, 17168, 35872, 72768, 145536, 291072, 549376, 1147904, 2328576, 4657152, 9314304, 17580032, 3178496, 7405568, 14811136, 29622272, 25690112}; //Set an array with the bit patterns that would be flipped for each button press
+
 	public static void main(String[] args){
 		System.out.println("Welcome to Bits Out!");
 		System.out.println("  yes, it's ASCII.. ");
@@ -23,7 +25,6 @@ public class BitsOut {
 	}
 
 	private static int flipBits(int board, int in) {
-		int masks[] = {35, 71, 142, 284, 536, 1121, 2274, 4548, 9096, 17168, 35872, 72768, 145536, 291072, 549376, 1147904, 2328576, 4657152, 9314304, 17580032, 3178496, 7405568, 14811136, 29622272, 25690112}; //Set an array with the bit patterns that would be flipped for each button press
 		return (board ^ masks[in]); //xor to twiddle the bits!
 	}
 
